@@ -154,18 +154,18 @@ Getting Your Hands Dirty with Unity (120–148)
 Movement, Camera Controls, and Collisions (149–175)
 
 - [x] Movement
-	- [ ] Understand the difference between a "position vector" and a "direction vector"
-	- [ ] Capture keyboard input in C#
-	- [ ] Move and rotate a game object using `Translate()` and `Rotate()` with direction vectors
-- [ ] Camera Controls
-	- [ ] Add a script to the main camera that follows and looks at the player
-- [ ] Physics and Collisions
-	- [ ] Use `FixedUpdate()` to control game objects using Unity's physics engine
-	- [ ] Apply physics forces to a game object RigidBody using `MovePosition()`
-	- [ ] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider? : **No**
-	- [ ] Use `OnCollisionEnter()` to check if a game object has run into another collider
-	- [ ] Use `Destroy()` to remove a game object from the scene
-	- [ ] Use `OnTriggerEnter()` and `OnTriggerExit()` to detect when two colliders start and stop touching
+	- [x] Understand the difference between a "position vector" and a "direction vector"
+	- [x] Capture keyboard input in C#
+	- [x] Move and rotate a game object using `Translate()` and `Rotate()` with direction vectors
+- [x] Camera Controls
+	- [x] Add a script to the main camera that follows and looks at the player
+- [x]  Physics and Collisions
+	- [x] Use `FixedUpdate()` to control game objects using Unity's physics engine
+	- [x] Apply physics forces to a game object RigidBody using `MovePosition()`
+	- [x] ✏️ Q: Will a [collision detection](https://docs.unity3d.com/Manual/CollidersOverview.html) occur when a Kinematic Rigidbody Collider touches a Static Collider? : **No**
+	- [x] Use `OnCollisionEnter()` to check if a game object has run into another collider
+	- [x] Use `Destroy()` to remove a game object from the scene
+	- [x] Use `OnTriggerEnter()` and `OnTriggerExit()` to detect when two colliders start and stop touching
 
 
 
@@ -175,15 +175,15 @@ Movement, Camera Controls, and Collisions (149–175)
 Scripting Game Mechanics (176–207)
 
 - Character Control
-	- [ ] Capture keyboard input in C# using the `enum` type and value `KeyCode.Space`
-	- [ ] Use `AddForce()` to make a character jump
-	- [ ] Use a `LayerMask` and a new "Ground" layer in Unity to determine if a character is "IsGrounded"
-- [ ] Add a shooting mechanic
-	- [ ] Create a "projectile" prefab that moves forward using `RigidBody.velocity`
-	- [ ] Instantiate the projectile on click and destroy it after `3` seconds
-- [ ] Create a GameManager
- 	- [ ] Use `get` and `set` properties to return and assign properties that are used across the game
-- [ ] Add a simple UI to inform the user of game state(s)
-	- [ ] Add text to show the health and items counts to the user
-	- [ ] Add a win condition to the game and display it in the UI
-	- [ ] Use `Time.timeScale = 0` to pause the game
+	- [x] Capture keyboard input in C# using the `enum` type and value `KeyCode.Space`
+	- [x] Use `AddForce()` to make a character jump
+	- [x] Use a `LayerMask` and a new "Ground" layer in Unity to determine if a character is "IsGrounded"
+- [x] Add a shooting mechanic
+	- [x] Create a "projectile" prefab that moves forward using `RigidBody.velocity`
+	- [x] Instantiate the projectile on click and destroy it after `3` seconds
+- [x] Create a GameManager
+ 	- [x] Use `get` and `set` properties to return and assign properties that are used across the game
+- [x] Add a simple UI to inform the user of game state(s)
+	- [x] Add text to show the health and items counts to the user
+	- [x] Add a win condition to the game and display it in the UI
+	- [x] Use `Time.timeScale = 0` to pause the game
