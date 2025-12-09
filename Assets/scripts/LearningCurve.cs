@@ -15,15 +15,12 @@ public class LearningCurve : MonoBehaviour
         { "Avi", 15 }
     };
 
-    // --- Chapter 7: Movement variables ---
     public float moveSpeed = 5f;
     public float rotateSpeed = 90f;
 
-    // For physics movement
     private Rigidbody rb;
     public float physicsMoveSpeed = 3f;
 
-    // --- Chapter 8: Shooting ---
     public GameObject projectilePrefab;
     public Transform projectileSpawnPoint;
     public float projectileSpeed = 10f;
@@ -120,9 +117,7 @@ public class LearningCurve : MonoBehaviour
             Debug.Log($"Name: {pair.Key}, Score: {pair.Value}");
         }
 
-        // ============================
-        //   CHAPTER 5 — CLASSES
-        // ============================
+        
 
         Character hero = new Character("HeroName", 12);
         Character heroine = new Character("HeroineName", 10);
@@ -130,9 +125,7 @@ public class LearningCurve : MonoBehaviour
         hero.PrintStatsInfo();
         heroine.PrintStatsInfo();
 
-        // ============================
-        //   CHAPTER 5 — STRUCTS
-        // ============================
+        
 
         Weapon huntingBow = new Weapon("Hunting Bow", 15);
         Weapon warBow = new Weapon("War Bow", 30);
@@ -140,16 +133,12 @@ public class LearningCurve : MonoBehaviour
         Debug.Log($"Weapon 1: {huntingBow.weaponName}, Damage: {huntingBow.damage}");
         Debug.Log($"Weapon 2: {warBow.weaponName}, Damage: {warBow.damage}");
 
-        // ============================
-        //   CHAPTER 5 — CHILD CLASSES
-        // ============================
+        
 
         Paladin knight = new Paladin("Sir Roland", 20, new Weapon("Holy Blade", 50));
         knight.PrintStatsInfo();
 
-        // ============================
-        //   CHAPTER 5 — REFERENCING OBJECTS
-        // ============================
+        
 
         Transform camTransform = GetComponent<Transform>();
         Debug.Log($"Camera Local Position: {camTransform.localPosition}");
@@ -158,30 +147,24 @@ public class LearningCurve : MonoBehaviour
         Transform lightTransform = lightObj.GetComponent<Transform>();
         Debug.Log($"Light Local Position: {lightTransform.localPosition}");
 
-        // ============================
-        //   CHAPTER 7 — PHYSICS SETUP
-        // ============================
+        
         rb = GetComponent<Rigidbody>();
     }
 
     void Update()
     {
-        // ============================
-        //   CHAPTER 7 — MOVEMENT
-        // ============================
+        
 
         float move = Input.GetAxis("Vertical");
         float rotate = Input.GetAxis("Horizontal");
 
-        // Position vector vs. direction vector
+        
         Vector3 direction = new Vector3(0, 0, move);
 
         transform.Translate(direction * moveSpeed * Time.deltaTime);
         transform.Rotate(Vector3.up * rotateSpeed * rotate * Time.deltaTime);
 
-        // ============================
-        //   CHAPTER 8 — SHOOTING
-        // ============================
+        
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
@@ -196,9 +179,7 @@ public class LearningCurve : MonoBehaviour
 
     void FixedUpdate()
     {
-        // ============================
-        //   CHAPTER 7 — PHYSICS MOVEMENT
-        // ============================
+        
 
         if (rb != null)
         {
